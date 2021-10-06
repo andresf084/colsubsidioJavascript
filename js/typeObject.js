@@ -47,7 +47,8 @@ console.log(persona.email, persona.celular);
 var informacion = {
     perfil: {
         name: "Gustavo",
-        apellido: "Garcia"
+        apellido: "Garcia",
+        edad: 32
     },
     estudio: {
         primaria: {
@@ -57,10 +58,40 @@ var informacion = {
             colegio: "Liceo Santa Barbara"
         }
     }
-}
+};
 
 console.log(informacion.estudio.primaria.colegio);
 console.log(informacion['estudio']['secundaria']['colegio']);
+
+//Eliminar propiedad de un objeto
+//Sintaxis -> delete objeto.propiedad
+console.log(informacion.perfil.edad);
+delete informacion.perfil['edad'];
+console.log(informacion['perfil']['edad']);
+
+//Comparar Objetos
+//Dos objetos nunca son inguales, incluso si tienen las mismas
+//propiedad.
+var vehiculo = {
+    modelo: 2014
+};
+
+var vehiculoDos = {
+    modelo: 2014
+};
+
+console.log(vehiculo == vehiculoDos);
+console.log(vehiculo === vehiculoDos);
+
+//La unica manera de comparar objetos es que tengan la misma referencia
+var camion = {
+    marca: 'BMW'
+};
+
+var camionDos = camion;
+
+console.log(camion == camionDos);
+console.log(camion === camionDos);
 
 //Utilizar los console.log 
 //console.log(variable+ variable2);
