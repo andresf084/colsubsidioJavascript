@@ -16,24 +16,34 @@ console.log(arreglo[arreglo.length - 1]);
 
 //Como añadimos un valor a un array
 //en la ultima posicion
-//sintaxis -> nombreArreglo.push(valor);
+//sintaxis -> nombreArray.push(valor);
 arreglo.push('11');
 console.log('arreglo: ', arreglo);
 
 //Como añadimos un valor a un array
 //en la primera posicion
-//sintaxis -> nombreArreglo.unshift(valor);
+//sintaxis -> nombreArray.unshift(valor);
 arreglo.unshift('11');
 console.log('arreglo: ', arreglo);
 
 //Como eliminamos la ultima posicion de un
 //array
-//Sintaxis -> nombreArreglo.pop();
+//Sintaxis -> nombreArray.pop();
 arreglo.pop();
 console.log('arreglo: ', arreglo);
 
 //Como eliminamos la primera posicion de un
 //array
-//Sintaxis -> nombreArreglo.shift();
+//Sintaxis -> nombreArray.shift();
 arreglo.shift();
 console.log('arreglo: ', arreglo);
+
+//Como le pedimos la posicion de un valor
+//dentro de un arreglo
+//Sintaxis -> nombreArray.indexOf(valor);
+console.log(arreglo.indexOf('no existe'));
+
+//Como copiamos un array
+//Sintaxis -> var nuevoArray = nombreArray.slice();
+var copiaArreglo = arreglo.slice();
+console.log('copia arreglo: ', copiaArreglo);
