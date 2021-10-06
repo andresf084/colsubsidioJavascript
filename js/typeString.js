@@ -25,7 +25,18 @@ console.log(primeraForma.length);
 console.log(primeraForma.charAt(11));
 console.log(primeraForma[11]);
 
-//Comparar string
-var caracterA = "a";
-var caracterB = 'b';
-console.log(caracterA < caracterB);
+//Comparar string - Lo hace comparando su valor ACSSI
+/*
+Comparar - ==
+Comparando el valor
+*/
+console.log("8" == 8);
+/*
+Comparar - ===
+Comparando primero el tipo y luego el valor
+*/
+console.log("8" === 8);
+
+//Comparando cadenas de texto
+// Colombia < argentina
+console.log(`Colombia`.toUpperCase() < `argentina`.toUpperCase());
