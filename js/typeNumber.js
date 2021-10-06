@@ -9,3 +9,7 @@ console.log(isNaN(miPrimeraVariable));
 console.log(Number.MAX_VALUE);
 //Minimo numero en JS
 console.log(Number.MIN_VALUE);
+//eval()
+console.log(eval(8+5));
+//Pasar un tipo de dato a un tipo de dato Number
+console.log(Number("8"));
