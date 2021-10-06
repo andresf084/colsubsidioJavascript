@@ -14,3 +14,26 @@ console.log(arreglo.length);
 //arreglo
 console.log(arreglo[arreglo.length - 1]);
 
+//Como añadimos un valor a un array
+//en la ultima posicion
+//sintaxis -> nombreArreglo.push(valor);
+arreglo.push('11');
+console.log('arreglo: ', arreglo);
+
+//Como añadimos un valor a un array
+//en la primera posicion
+//sintaxis -> nombreArreglo.unshift(valor);
+arreglo.unshift('11');
+console.log('arreglo: ', arreglo);
+
+//Como eliminamos la ultima posicion de un
+//array
+//Sintaxis -> nombreArreglo.pop();
+arreglo.pop();
+console.log('arreglo: ', arreglo);
+
+//Como eliminamos la primera posicion de un
+//array
+//Sintaxis -> nombreArreglo.shift();
+arreglo.shift();
+console.log('arreglo: ', arreglo);
