@@ -38,5 +38,8 @@ Comparando primero el tipo y luego el valor
 console.log("8" === 8);
 
 //Comparando cadenas de texto
-// Colombia < argentina
+//Colombia < argentina
 console.log(`Colombia`.toUpperCase() < `argentina`.toUpperCase());
+
+//Valores de escape
+console.log("Hola a todos \"\'\\");
