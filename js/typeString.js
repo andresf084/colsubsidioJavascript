@@ -17,3 +17,15 @@ console.log(terceraForma);
 
 //Pasar un tipo de dato a un tipo de dato String
 console.log(String(8));
+
+//Obtener el tamaño de caracteres dentro de un string
+console.log(primeraForma.length);
+
+//Obtener un caracter en especial de una posicion
+console.log(primeraForma.charAt(11));
+console.log(primeraForma[11]);
+
+//Comparar string
+var caracterA = "a";
+var caracterB = 'b';
+console.log(caracterA < caracterB);
