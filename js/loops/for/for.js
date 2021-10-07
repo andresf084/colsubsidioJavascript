@@ -22,6 +22,16 @@ var ciudades = ['Bucaramanga', 'Cali', 'Bogota', 'Valledupar', 'Barranquilla'];
 //Por favor imprimir los valores de las posiciones pares
 //de la siguiente forma
 //'posicion <posicionArreglo> es par y su valor es <valorDelaPosicionDelArreglo>'
-// y los valores de las posiciones impares
+//y los valores de las posiciones impares
 //de la siguiente forma
 //'posicion <posicionArreglo> es impar y su valor es <valorDelaPosicionDelArreglo>'
+//modulo -> %
+//ejemplo de utilizar modulo: 3%2=1; 2%2=0 
+for(var posicionTemporalCiudades = 0; posicionTemporalCiudades < ciudades.length; posicionTemporalCiudades++){
+    if(posicionTemporalCiudades%2==0){
+        console.log(`posicion ${posicionTemporalCiudades} es par y su valor es ${ciudades[posicionTemporalCiudades]}`)
+    }
+    else if (posicionTemporalCiudades%2==1){
+        console.log(`posicion ${posicionTemporalCiudades} es impar y su valor es ${ciudades[posicionTemporalCiudades]}`)
+    }
+}
