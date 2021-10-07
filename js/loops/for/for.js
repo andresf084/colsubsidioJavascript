@@ -40,4 +40,12 @@ for(var posicionTemporalCiudades = 0; posicionTemporalCiudades < ciudades.length
 Matriz
 */
 var dosDimensiones3x3 = [[0,1,2], [3,4,5], [6,7,8]];
-console.log(dosDimensiones3x3);
+/*
+Deben utilizar bucles
+suma diagonales
+    0 1 2
+    3 4 5
+    6 7 8
+En consola:
+-> La suma de la diagonal es <sumaDiagonales>
+*/
