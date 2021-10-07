@@ -6,7 +6,8 @@ var boleanoDos = false;
 console.log(boleanoUno);
 console.log(boleanoDos);
 
-//0, -0, null, false, NaN, undefined, ""
+//Estos siempre me lso toma como false
+//0, -0, null, false, NaN, undefined, "", '', ``
 console.log(Boolean(0));
 console.log(Boolean(-0));
 console.log(Boolean(null));
