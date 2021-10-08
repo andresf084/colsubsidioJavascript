@@ -49,7 +49,7 @@ suma diagonales
 En consola:
 -> La suma de la diagonal es <sumaDiagonales>
 */
-var sumatoria = 0;
+/*var sumatoria = 0;
 for (var iteratorPrincipal = 0; iteratorPrincipal <= dosDimensiones3x3.length - 1; iteratorPrincipal++) {
     var matrizInternoTemporal = dosDimensiones3x3[iteratorPrincipal];
     for (var iteratorSecundario = 0; iteratorSecundario <= matrizInternoTemporal.length - 1; iteratorSecundario++) {
@@ -62,5 +62,15 @@ for (var iteratorPrincipal = 0; iteratorPrincipal <= dosDimensiones3x3.length - 
             sumatoria = sumatoria + dosDimensiones3x3[iteratorPrincipal][iteradorTerciario];
         }
     }
+}
+console.log(sumatoria);
+*/
+
+
+//Solucion de Leonardo
+var sumatoria = 0;
+for(var iterador = 0; iterador <= dosDimensiones3x3.length-1; iterador++) {
+    sumatoria += dosDimensiones3x3[iterador][iterador];
+    sumatoria += dosDimensiones3x3[iterador][(dosDimensiones3x3.length-1) - iterador];
 }
 console.log(sumatoria);
