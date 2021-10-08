@@ -1,4 +1,4 @@
-//scope, ambito, alcance
+//scope, ambito, alcance, contexto
 var variable = 5;
 //console.log(variable);
 
