@@ -27,7 +27,15 @@ var informacion = {
     }
 };
 
-for(const propiedad in informacion) {
-    console.log(`${propiedad} su valor es ${informacion[propiedad]}`);
+function iterarInternamenteObjeto(objeto) {
+    if(typeof objeto !== 'object') {
+        return;
+    }
 
+    for(const propiedad in objeto) {
+        console.log((typeof objeto[propiedad] !== 'object')?`  ${propiedad}: ${objeto[propiedad]}`:`${propiedad}`);
+        iterarInternamenteObjeto(objeto[propiedad]);
+    }
 }
+
+iterarInternamenteObjeto(informacion);
