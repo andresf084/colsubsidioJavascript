@@ -17,17 +17,17 @@ var personaDos = {
 //Hay dos formas de pedir una valor de una propiedad
 //Primera forma
 //objeto['propiedad']
-console.log(persona['nombre']);
-console.log(personaDos['nombre']);
+//console.log(persona['nombre']);
+//console.log(personaDos['nombre']);
 
 //Segunda Forma
 //objeto.propiedad
-console.log(persona.edad);
-console.log(personaDos.edad);
+//console.log(persona.edad);
+//console.log(personaDos.edad);
 
 //Cuando invoco propiedades inexistentes
-console.log(persona['celular']);
-console.log(persona.email);
+//console.log(persona['celular']);
+//console.log(persona.email);
 
 //Quiero agregar propiedades una vez ya se creo el objeto
 //Si yo creo el objeto con la segunda forma, una forma de
@@ -40,8 +40,8 @@ personaDos['celular'] = 3016710956;
 persona['email'] = 'gustavogblanco@live.com';
 persona.celular = 3016710956;
 
-console.log(persona['celular']);
-console.log(persona.email, persona.celular);
+//console.log(persona['celular']);
+//console.log(persona.email, persona.celular);
 
 //Un objeto puede tener cualquier tipo de dato
 var informacion = {
@@ -60,14 +60,14 @@ var informacion = {
     }
 };
 
-console.log(informacion.estudio.primaria.colegio);
-console.log(informacion['estudio']['secundaria']['colegio']);
+//console.log(informacion.estudio.primaria.colegio);
+//console.log(informacion['estudio']['secundaria']['colegio']);
 
 //Eliminar propiedad de un objeto
 //Sintaxis -> delete objeto.propiedad
-console.log(informacion.perfil.edad);
-delete informacion.perfil['edad'];
-console.log(informacion['perfil']['edad']);
+//console.log(informacion.perfil.edad);
+//delete informacion.perfil['edad'];
+//console.log(informacion['perfil']['edad']);
 
 //Comparar Objetos
 //Dos objetos nunca son inguales, incluso si tienen las mismas
@@ -80,8 +80,8 @@ var vehiculoDos = {
     modelo: 2014
 };
 
-console.log(vehiculo == vehiculoDos);
-console.log(vehiculo === vehiculoDos);
+//console.log(vehiculo == vehiculoDos);
+//console.log(vehiculo === vehiculoDos);
 
 //La unica manera de comparar objetos es que tengan la misma referencia
 var camion = {
@@ -90,8 +90,8 @@ var camion = {
 
 var camionDos = camion;
 
-console.log(camion == camionDos);
-console.log(camion === camionDos);
+//console.log(camion == camionDos);
+//console.log(camion === camionDos);
 
 //Utilizar los console.log 
 //console.log(variable+ variable2);
@@ -104,3 +104,10 @@ console.log("numero: ", 8);
 
 console.log("vector: "+ [1,2,3,4,5]);
 console.log("vector: ", [1,2,3,4,5]);*/
+
+//Como iteramos sobre objetos
+//Sintaxis -> for(const <propiedadTemporal> in <objeto>) {code}
+for(const propiedad in informacion) {
+    console.log(`${propiedad} su valor es ${informacion[propiedad]}`);
+
+}
