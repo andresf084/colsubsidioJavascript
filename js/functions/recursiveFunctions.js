@@ -27,12 +27,22 @@ var informacion = {
     }
 };
 
+//Operador Ternario
+
+
 function iterarInternamenteObjeto(objeto) {
     if(typeof objeto !== 'object') {
         return;
     }
 
     for(const propiedad in objeto) {
+        /*
+        if(typeof objeto[propiedad] !== 'object') {
+            console.log(`  ${propiedad}: ${objeto[propiedad]}`);
+        } else {
+            console.log(`${propiedad}`);
+        }
+        */
         console.log((typeof objeto[propiedad] !== 'object')?`  ${propiedad}: ${objeto[propiedad]}`:`${propiedad}`);
         iterarInternamenteObjeto(objeto[propiedad]);
     }
