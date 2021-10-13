@@ -34,9 +34,14 @@ const parrafos = document.getElementsByTagName('p');
 //[options] -> contiene una única propiedad llamada is, cuyo valor es el de la etiqueta
 //tagName de un elemento personalizado.
 const parrafo = document.createElement('p');
-console.log(parrafo);
+//console.log(parrafo);
 
 //appendChild('<child>');
 //Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especifico
 //Child -> hijo y es una referencia hacia un nodo existente en el documento actual
-document.body.appendChild(parrafo);
+//document.body.appendChild(parrafo);
+
+//1 actividad sin modificar el html, crear un nodo en el DOM
+//con la etiqueta que ustedes quieren y añadirlo en el 2 section del documento
+//2 actividad modificar el html con solo un atributo y añadir
+//el elemento creado en la linea 36 al primer section en el documento
