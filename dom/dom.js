@@ -15,6 +15,12 @@
 
 //document.getElementById(<id>)
 //Metodo me retorna todo un elemento HTML (nodo) cuyo atributo id es igual al que le pasamos como parametro
-console.log(document.getElementById('heading'));
+//console.log(document.getElementById('heading'));
 //Para traer contenido usamos la propiedad innerHTML
-console.log(document.getElementById('heading').innerHTML);
+//console.log(document.getElementById('heading').innerHTML);
+
+//getElementsByTagName(<name>)
+//Retorna en una lista los elementos con un nombre determinado. Es decir,
+//busca en todo el documento, incluyendo el nodo raiz
+const parrafos = document.getElementsByTagName('p');
+console.log(parrafos);
