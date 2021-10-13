@@ -12,11 +12,9 @@
 
 //element
 //A un nodo de tipo 'element' que hace parte del DOM
-//console.log(document.body);
-console.log(document.getElementById('parrafo')['innerHTML']);
 
-//console.log(document.children);
-
-const elemento = document.createElement('input');
-document.body.appendChild(elemento);
-elemento.value = 'DOM';
+//document.getElementById(<id>)
+//Metodo me retorna todo un elemento HTML (nodo) cuyo atributo id es igual al que le pasamos como parametro
+console.log(document.getElementById('heading'));
+//Para traer contenido usamos la propiedad innerHTML
+console.log(document.getElementById('heading').innerHTML);
