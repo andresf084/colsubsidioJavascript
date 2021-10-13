@@ -114,4 +114,17 @@ for(const propiedad in informacion) {
 //Como obtengo las propiedades de un Objeto
 //Sintaxis -> Object.keys(<objeto>)
 //Retorna un array con todas las propiedades.
-console.log(Object.keys(informacion));
+//console.log(Object.keys(informacion));
+
+function funcionRecursiva(objeto){
+    const arreglo = Object.keys(objeto);
+    for(let posicionTemporal in arreglo) {
+        console.log(arreglo[posicionTemporal]);
+        if(typeof objeto[arreglo[posicionTemporal]] === 'object') {
+            funcionRecursiva(objeto[arreglo[posicionTemporal]]);
+        }
+    }
+}
+
+funcionRecursiva(informacion);
+console.log("ejercicio terminado");
