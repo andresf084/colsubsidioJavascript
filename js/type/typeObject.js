@@ -108,6 +108,10 @@ console.log("vector: ", [1,2,3,4,5]);*/
 //Como iteramos sobre objetos
 //Sintaxis -> for(const <propiedadTemporal> in <objeto>) {code}
 for(const propiedad in informacion) {
-    console.log(`${propiedad} su valor es ${informacion[propiedad]}`);
-
+    //console.log(`${propiedad} su valor es ${informacion[propiedad]}`);
 }
+
+//Como obtengo las propiedades de un Objeto
+//Sintaxis -> Object.keys(<objeto>)
+//Retorna un array con todas las propiedades.
+console.log(Object.keys(informacion));
