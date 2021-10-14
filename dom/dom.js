@@ -95,9 +95,9 @@ console.log(input[0].getAttribute('id'));
 //o alternar clases.
 //adicionar clases utilizo .add('<nombreClase>')
 console.log(input[0].classList);
-input[0].classList.add('clase1');
-input[0].classList.add('clase2');
-input[0].classList.add('clase3');
+input[0].classList.add('red');
+input[0].classList.add('blue');
+input[0].classList.add('green');
 console.log(input[0].classList);
-//adicionar clases utilizo .remove('<nombreClase>')
-input[0].classList.remove('clase1');
+//eliminar clases utilizo .remove('<nombreClase>')
+input[0].classList.remove('green');
