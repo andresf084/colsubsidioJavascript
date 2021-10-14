@@ -80,12 +80,24 @@ const input = document.getElementsByTagName('input');
 input[0].setAttribute('type', 'date');
 input[0].setAttribute('type', 'text');
 
-//removeAttribute(<nombreAtributo>)
+//removeAttribute('<nombreAtributo>')
 //Si deseo eliminar un attributo
 input[0].removeAttribute('type');
 input[0].removeAttribute('id');
 
-//getAttribute(<nombreAtributo>)
+//getAttribute('<nombreAtributo>')
 //Obtener un atributo en especifico de un elemento
 console.log(input[0].getAttribute('id'));
 //""
+
+//classList('<nombreClase>')
+//Nos permite acceder a las clases CSS de un elemento, puedo añadir, quitar
+//o alternar clases.
+//adicionar clases utilizo .add('<nombreClase>')
+console.log(input[0].classList);
+input[0].classList.add('clase1');
+input[0].classList.add('clase2');
+input[0].classList.add('clase3');
+console.log(input[0].classList);
+//adicionar clases utilizo .remove('<nombreClase>')
+input[0].classList.remove('clase1');
