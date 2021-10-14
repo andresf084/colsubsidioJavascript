@@ -60,3 +60,32 @@ parrafos[0].innerHTML = `<strong>nuevo Parrafo</strong>`;
 //La única diferencia con innerHTML, es que esta me trata todo como un string
 //a diferencia del innerHTML que me reconoce la sintaxis de elementos HTML
 parrafos[1].innerText = `<strong>nuevo Parrafo</strong>`;
+
+//style
+//Propiedad para agregar estilos a un nodo
+parrafos[1].style.color = 'red';
+parrafos[1].style.background = 'yellow';
+parrafos[1].style.font = 'italic bold 20px arial,serif';
+
+//setAttribute(<nombreAtributo>,<valorAtributo>)
+//Establecer el valor de un atributo en el elemento indicado. Si el atributo
+//existe, el valor es actualizado, pero si no existe, añade el atributo con
+//el valor.
+const articulo = document.getElementsByTagName('article');
+articulo[0].setAttribute('id', 'articulo');
+
+const input = document.getElementsByTagName('input');
+//DOM false -> disabled
+//input[0].setAttribute('disabled', '');
+input[0].setAttribute('type', 'date');
+input[0].setAttribute('type', 'text');
+
+//removeAttribute(<nombreAtributo>)
+//Si deseo eliminar un attributo
+input[0].removeAttribute('type');
+input[0].removeAttribute('id');
+
+//getAttribute(<nombreAtributo>)
+//Obtener un atributo en especifico de un elemento
+console.log(input[0].getAttribute('id'));
+//""
