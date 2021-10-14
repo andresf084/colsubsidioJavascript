@@ -101,3 +101,9 @@ input[0].classList.add('green');
 console.log(input[0].classList);
 //eliminar clases utilizo .remove('<nombreClase>')
 input[0].classList.remove('green');
+
+//Eventos
+//manera como podemos interactuar con nuestra aplicacion
+input[0].addEventListener('change', function (event) {
+    console.log('Este evento se disparo', event.target.value);
+})
