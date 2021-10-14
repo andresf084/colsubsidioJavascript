@@ -39,9 +39,24 @@ const parrafo = document.createElement('p');
 //appendChild('<child>');
 //Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especifico
 //Child -> hijo y es una referencia hacia un nodo existente en el documento actual
-//document.body.appendChild(parrafo);
+document.body.appendChild(parrafo);
 
 //1 actividad sin modificar el html, crear un nodo en el DOM
 //con la etiqueta que ustedes quieren y añadirlo en el 2 section del documento
 //2 actividad modificar el html con solo un atributo y añadir
 //el elemento creado en la linea 36 al primer section en el documento
+
+//innerHTML;
+//Propiedad devuelve o estable la sintaxis HTML describiendo los descendientes del elemento
+//Al establecerse se reemplaza la sintaxis HTML del elemento por la nueva
+//Como rescato el contenido HTML
+//Sintaxis -> <elemento>.innerHTML
+console.log(parrafos[0].innerHTML);
+//Como cambio el contenido del HTML
+//parrafos[0].innerHTML = 'nuevo Parrafo';
+parrafos[0].innerHTML = `<strong>nuevo Parrafo</strong>`;
+
+//innerText
+//La única diferencia con innerHTML, es que esta me trata todo como un string
+//a diferencia del innerHTML que me reconoce la sintaxis de elementos HTML
+parrafos[1].innerText = `<strong>nuevo Parrafo</strong>`;
