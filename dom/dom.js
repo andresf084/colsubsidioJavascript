@@ -102,8 +102,31 @@ console.log(input[0].classList);
 //eliminar clases utilizo .remove('<nombreClase>')
 input[0].classList.remove('green');
 
+function cambiar(evento) {
+    console.log(evento);
+};
+
+function cliquear() {
+    console.log("se ejecuto el evento porque modifique hice click en el input");
+};
+
+function cambiarDesdeHTML(loquesea) {
+    console.log(loquesea);
+}
+
 //Eventos
 //manera como podemos interactuar con nuestra aplicacion
-input[0].addEventListener('change', function (event) {
+/*input[0].addEventListener('change', cambiar)
+input[0].addEventListener('click', cliquear)*/
+
+/*input[0].addEventListener('change', function (event) {
     console.log('Este evento se disparo', event.target.value);
+})*/
+input[0].addEventListener('click', function (event) {
+    console.log(event);
 })
+
+//cuando mi pagina es cargada
+/*window.addEventListener('load', function() {
+    alert('La pagina fue cargada');
+})*/

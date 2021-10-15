@@ -28,7 +28,13 @@
                         <label for="nombre">
                             Nombre:
                         </label>
-                        <input id="nombre" onchange="alertarCambio($event)"/>
+                        <!--$event-->
+                        <!--La interaccion de JS con HTML se maneja a traves de eventos
+                        que ocurre cuando el usuario o el navegador manipulan una pagina.
+                        Por ejemplo: cuando se carga la pagina, se conoce como un evento-->
+                        <!--this-->
+                        <!--Pasarle toda la referencia, es decir, me pasa toda la informacion de mi misma-->
+                        <input id="nombre" onchange="cambiarDesdeHTML(this.value)" />
                     </form>
                 </section>
             </article>
