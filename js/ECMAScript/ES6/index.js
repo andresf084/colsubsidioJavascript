@@ -67,7 +67,7 @@ console.log(objeto);*/
 
 //Funciones Flechas
 //Escribir con mas azucar sintatico una funcion
-//No tienen su prpio alcance, es decir, no tienen this
+//No tienen su propio alcance, es decir, no tienen this
 //No se pueden utilizar como metodos contructores (porque no tienen su propio alcance)
 
 //Funcion en bloque
