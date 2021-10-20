@@ -59,8 +59,29 @@ console.log(template);*/
 /*const arreglo = [0,1,2,3,4];
 arreglo.push("5");
 console.log(arreglo);*/
-const objeto = {};
+/*const objeto = {};
 objeto.name = "Gustavo";
 objeto.age = 32;
 objeto.age = "32";
-console.log(objeto);
+console.log(objeto);*/
+
+//Funciones Flechas
+//Escribir con mas azucar sintatico una funcion
+//No tienen su prpio alcance, es decir, no tienen this
+//No se pueden utilizar como metodos contructores (porque no tienen su propio alcance)
+
+//Funcion en bloque
+/*function saludar() {
+    return "Hola mundo";
+}
+console.log(saludar());*/
+
+//La palabra reservada function, ya no existe
+//<nombreFuncion> = (<parametros>) => <retorno>
+saludar = () => "Hola Mundo";
+console.log(saludar());
+
+let funcion = function() {
+    return "Vivo en Combia";
+}
+console.log(funcion());
