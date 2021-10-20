@@ -27,7 +27,7 @@ console.log(`Esta es una variable global ${posicionTemporalDos}`);*/
 console.log(`Esta es una variable global ${posicionTemporalTres}`);*/
 
 //Pequeña entrevista para desarrollador junior
-var numero = 5;
+/*var numero = 5;
 var numeroDos = 10;
 
 if(numero === 5) {
@@ -41,4 +41,26 @@ if(numero === 5) {
 
 console.log(numero);
 console.log(numeroDos);
-console.log(numeroTres);
+console.log(numeroTres);*/
+
+//const
+//Es una variable inmutable en su valor
+/*const entero = 10;
+entero = 15;
+console.log(entero);*/
+/*const cadena = "hola";
+cadena = "mundo";
+console.log(cadena);*/
+/*let hola = "hola";
+let mundo = "bienvenidos";
+mundo = "mundo";
+const template = `${hola} ${mundo}`;
+console.log(template);*/
+/*const arreglo = [0,1,2,3,4];
+arreglo.push("5");
+console.log(arreglo);*/
+const objeto = {};
+objeto.name = "Gustavo";
+objeto.age = 32;
+objeto.age = "32";
+console.log(objeto);
