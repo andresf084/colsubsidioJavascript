@@ -78,10 +78,22 @@ console.log(saludar());*/
 
 //La palabra reservada function, ya no existe
 //<nombreFuncion> = (<parametros>) => <retorno>
-saludar = () => "Hola Mundo";
-console.log(saludar());
+/*saludar = () => "Hola Mundo";
+console.log(saludar());*/
 
-let funcion = function() {
+/*let funcion = function() {
     return "Vivo en Combia";
 }
 console.log(funcion());
+
+funcion = () => "Vivo en Colombia";
+console.log(funcion());*/
+
+/*function saludar(nombre) {
+    return `Bienvenido ${nombre}`;
+}*/
+
+saludar = (nombre) => `Bienvenido ${nombre}`;
+//si y solo si tengo un unico parametro
+//saludar = nombre => `Bienvenido ${nombre}`;
+console.log(saludar("Gustavo"));
